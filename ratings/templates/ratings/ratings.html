@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Find the lowest rated parking lots!</h1>
+
+<form action = "/" method = "post" >
+    {% csrf_token %}
+    {{ form }}
+<input type=submit value="Submit">
+</form>
+
+{% for result in results %}
+    <p>score: {{result.score}}</p>
+    <p>address: {{result.address}}</p>
+    <img src={{result.image}}>
+    <p>rating: {{result.rating}}</p>
+    <p>reviews numbuer: {{result.reviews}}</p>
+    <a href={{result.yelp_link}}>Yelp Link</a>
+    <br>
+{% endfor %}
+
+</body>
+</html>
