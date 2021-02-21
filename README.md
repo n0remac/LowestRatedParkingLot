@@ -21,3 +21,4 @@ Create database: <br>
 Start app: <br>
 `python manage.py runserver`
 
+Add your yelp key in ratings/get_lots.py
