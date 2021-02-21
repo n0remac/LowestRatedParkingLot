@@ -12,11 +12,12 @@ Create an environment: <br>
 Activate environment: <br>
 `source venv/bin/activate`
 
-Install django:<br>
-`pip install django`
+Install requirements:<br>
+`pip install -r requirements.txt`
 
 Create database: <br>
 `python manage.py migrate`
 
 Start app: <br>
 `python manage.py runserver`
+
